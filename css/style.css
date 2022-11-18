@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(228, 238, 252);
+}
+
+.header, .header div{
+    padding: 20px;
+    font-weight: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(165, 173, 249);
+    color: #fff;
+}   
+
+.header div ul li{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 20px;
+   
+}
+ 
