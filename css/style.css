@@ -2,6 +2,9 @@
     --white: #fff;
     --black: rgb(0,0,0);
     --tan: rgb(254, 135, 67);
+    --green: rgb(98, 153, 74);
+    --lightgreen: rgb(172, 227, 184);
+    --darkgreen: rgb(10, 93, 10);
 }
     
 body {
@@ -22,6 +25,17 @@ main {
 .image {
     background-image: url(https://thumbs.dreamstime.com/b/horizontal-banner-forest-background-silhouettes-trees-magical-misty-landscape-fog-green-yellow-illustration-225955264.jpg);
     height: 150px;
+    width: 100%;
+}
+
+.photo-me {
+    display: flex;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 3px solid var(--green);
+    height: 661px;
+    width: 500px;
 }
 
 header, footer{
@@ -30,48 +44,45 @@ header, footer{
     align-items: center;
     padding: 1%;
     padding: 20px;
+    width: 100%;
     font-weight: 40px;
-    background-color: rgb(98, 153, 74);
+    background-color: var(--green) ;
     color: var(--black);
 }   
-
-footer {
-    display: flexbox;
-    align-items: flex-end;
-}
 
 .lastname {
     font-size: 50px;
     font-weight: bold;
+    color: var(--tan);
 }
 
 
-nav ul {
+.nav ul {
     display: flex;
-    flex-flow: row;
+    flex-direction: row;
     justify-content: space-evenly;
     min-width: 400px;
     list-style-type: none;    
 
 }
 
-nav a {
+.nav a {
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
 
 }
-nav a:hover {
+.nav a:hover {
     color: var(--tan);
 }
 
-.sidebar {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    line-height: 200px;
+    line-height: 40px;
     font-size: 20px;
-    margin: 90px;
+    margin: 35px;
     color: var(--black);
 }
 
@@ -79,11 +90,49 @@ h2:hover {
     color: var(--tan);
 }
 
-.content {
+.projects {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: end;
-    text-align: right;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 1.5rem;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    color: var(--black);
+    outline: 2px dashed var(--tan);
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-body:hover {
+    box-shadow: inset 0px 0px 20px var(--darkgreen);
+}
+
+.card-header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--lightgreen);
+    border: 2px solid var(--tan);
+    border-radius: 8px;
+}
+
+.link {
+    text-decoration: none; 
+    color: var(--black);
 }
 
 .contact ul {
@@ -92,4 +141,24 @@ h2:hover {
     justify-content: space-evenly;
     align-items: flex-start;
     list-style-type: none;
+    text-decoration: none;
 }
+
+@media screen and (max-width: 700px) { 
+    .contact ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        margin: 200px;    
+    }
+    
+    .image {
+        width: 100%;
+    }
+}
+
+
