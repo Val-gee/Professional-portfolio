@@ -34,8 +34,8 @@ main {
     margin-right: auto;
     margin-top: 20px;
     border: 3px solid var(--green);
-    height: 661px;
-    width: 500px;
+    height: 512px;
+    width: 457px;
 }
 
 header, footer{
@@ -100,7 +100,7 @@ h2:hover {
 }
 
 .card-column {
-    flex: 1 0 100%;
+    /*flex: 1 0 100%;*/
     padding: 1.5rem;
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
@@ -144,16 +144,18 @@ h2:hover {
     text-decoration: none;
 }
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 900px) { 
     .contact ul {
         display: flex;
         flex-direction: column;
     }
 
-    .nav ul{
+    .nav ul {
         display: flex;
         flex-direction: column;
-        margin: 200px;    
+        justify-content: space-evenly;
+        margin: 255px; 
+        height: 215px;   
     }
     
     .image {
@@ -161,4 +163,21 @@ h2:hover {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .image, footer {
+        width: 100%;
+    }
 
+    .nav ul {
+        margin: 45px;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .work {
+        margin-left: 148px;
+    }
+
+}
