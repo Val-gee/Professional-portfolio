@@ -38,7 +38,7 @@ main {
     width: 457px;
 }
 
-header, footer{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,16 @@ header, footer{
     font-weight: 40px;
     background-color: var(--green) ;
     color: var(--black);
-}   
+}  
+
+footer {
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: var(--tan);
+    background-color: var(--darkgreen);
+}
 
 .lastname {
     font-size: 50px;
@@ -99,11 +108,26 @@ h2:hover {
     padding: 1.5rem;
 }
 
+
 .card-column {
     /*flex: 1 0 100%;*/
     padding: 1.5rem;
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
+}
+
+.aimg {
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/20/65/62/1000_F_120656213_kecfCsmDjTEPEPIugbdwBHxLr6T70NCa.jpg");
+    background-position: center;
+    background-size: 363px;
+}
+
+.bimg{
+    background-image: url("https://www.shakebugs.com/wp-content/uploads/2022/05/Benefits-of-teamwork-and-collaboration-for-software-development-teams.png");
+    background-size: 400px;
+    height: 182px;
 }
 
 .card-body {
@@ -114,6 +138,7 @@ h2:hover {
     color: var(--black);
     outline: 2px dashed var(--tan);
     outline-offset: -2px;
+    height: 144px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -141,7 +166,7 @@ h2:hover {
     justify-content: space-evenly;
     align-items: flex-start;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration-line: none;
 }
 
 @media screen and (max-width: 900px) { 
