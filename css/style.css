@@ -125,11 +125,13 @@ h2:hover {
 .bimg{
     background-image: url("https://www.shakebugs.com/wp-content/uploads/2022/05/Benefits-of-teamwork-and-collaboration-for-software-development-teams.png");
     background-size: 400px;
+    background-position: center;
     height: 182px;
 }
 
 .cimg {
-    background-image: url("../images/nightsky.png");
+    background-image: url("../images/sky.jpeg");
+    background-position: center;
     height: 182px;
 }
 
