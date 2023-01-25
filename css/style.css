@@ -114,10 +114,10 @@ h2:hover {
     margin-bottom: 1.5rem;
 }
 
-.aimg {
+.dimg {
     box-sizing: border-box;
     width: 100%;
-    background-image: url("https://as1.ftcdn.net/v2/jpg/01/20/65/62/1000_F_120656213_kecfCsmDjTEPEPIugbdwBHxLr6T70NCa.jpg");
+    background-image: url("../images/newspaper.webp");
     background-position: center;
     background-size: 363px;
 }
@@ -133,6 +133,12 @@ h2:hover {
     background-image: url("../images/sky.jpeg");
     background-position: center;
     height: 182px;
+}
+.aimg {
+    box-sizing: border-box;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/01/20/65/62/1000_F_120656213_kecfCsmDjTEPEPIugbdwBHxLr6T70NCa.jpg");
+    background-position: center;
+    background-size: 363px;
 }
 
 .card-body {
