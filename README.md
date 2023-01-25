@@ -29,7 +29,9 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+## Link
 
+[Click me](https://val-gee.github.io/Professional-portfolio/) to navigate to my professional portfolio!
 
 ## Mock-Up
 
